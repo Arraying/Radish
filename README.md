@@ -56,6 +56,13 @@ In addition, arrays are `Object[]`s, where each object is an instance of the afo
 
 `RedisResponse` provides some basic helper methods, i.e. converting the `byte[]`s to a `String`, however, everything is very basic and may require abstraction.
 
+### Concurrency
+A `RedisClient` is not thread safe, and needs to be synchronized externally.
+For concurrent usage, use a pool of `RedisClient`s.
+There are many existing libraries that provide pooling functionality, such as in Apache Commons.
+The `RedisClient` class is not final and implements Closeable. 
+A custom superclass can easily override (though it should call `super.close()` too) the method in order to return the connection to a pool.
+
 ### Installation
 
 Currently, Radish is not in Maven Central. Therefore, there are two ways of adding it to the repository.
