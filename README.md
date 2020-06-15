@@ -1,5 +1,5 @@
 # Radish
-Simple and lightweight Java Redis bindings.
+Simple and lightweight Java Redis bindings, inspired by [drm/java-redis-client](https://github.com/drm/java-redis-client).
 
 ### Overview
 Radish is a lightweight Redis (or other RESP-compatible services like KeyDB) client.
