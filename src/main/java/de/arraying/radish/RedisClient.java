@@ -53,7 +53,7 @@ public class RedisClient implements RedisCallable<RedisResponse>, Closeable {
      * @param inetSocketAddress The socket address of the Redis server, must not be null.
      * @param bufferSize The buffer size, a reasonable size would be 2^16.
      * @throws NullPointerException If the socket address is null.
-     * @throws IllegalArgumentException If the buffer size is < 0.
+     * @throws IllegalArgumentException If the buffer size is smaller than 0.
      * @throws RedisException If the socket connection could not be established.
      */
     public RedisClient(InetSocketAddress inetSocketAddress, int bufferSize) {

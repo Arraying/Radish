@@ -65,42 +65,19 @@ A custom superclass can easily override (though it should call `super.close()` t
 
 ### Installation
 
-Currently, Radish is not in Maven Central. Therefore, there are two ways of adding it to the repository.
-Future releases will be on a proper Maven repository.
-
-##### Through JitPack
-This is recommended.
 ```xml
 <repositories>
     <repository>
-    	<id>jitpack.io</id>
-    	<url>https://jitpack.io</url>
+    	<id>arraying-repo</id>
+    	<url>http://repo.arraying.de/repository/maven-releases</url>
 	</repository>
 </repositories>
 <dependencies>
     <dependency>
-        <groupId>com.github.Arraying</groupId>
-        <artifactId>Radish</artifactId>
-        <!-- You can also replace this with a commit hash -->
-        <version>master-SNAPSHOT</version>
-    </dependency>
-</dependencies>
-```
-
-##### Installing to the local repository
-First, install it to the local repository, then add as a dependency.
-This is not recommended for team projects.
-```xml
-git clone https://github.com/Arraying/Radish.git
-cd Radish
-mvn clean install
-```
-```xml
-<dependencies>
-    <dependency>
         <groupId>de.arraying</groupId>
         <artifactId>radish</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <!-- Replace this with the latest version if applicable -->
+        <version>1.0.0</version>
     </dependency>
 </dependencies>
 ```

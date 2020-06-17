@@ -5,7 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.arraying</groupId>
     <artifactId>radish</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>arraying-repo</id>
+            <url>http://repo.arraying.de/repository/maven-snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>arraying-repo</id>
+            <url>http://repo.arraying.de/repository/maven-releases</url>
+        </repository>
+    </distributionManagement>
     <build>
         <plugins>
             <plugin>
