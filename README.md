@@ -70,7 +70,7 @@ A custom superclass can easily override (though it should call `super.close()` t
     <repository>
     	<id>arraying-repo</id>
     	<url>http://repo.arraying.de/repository/maven-releases</url>
-	</repository>
+    </repository>
 </repositories>
 <dependencies>
     <dependency>
