@@ -68,9 +68,9 @@ A custom superclass can easily override (though it should call `super.close()` t
 ```xml
 <repositories>
     <repository>
-    	<id>arraying-repo</id>
+    	<id>arraying-releases</id>
     	<url>http://repo.arraying.de/releases/</url>
-	</repository>
+    </repository>
 </repositories>
 <dependencies>
     <dependency>
