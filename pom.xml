@@ -8,12 +8,12 @@
     <version>1.0.0</version>
     <distributionManagement>
         <snapshotRepository>
-            <id>arraying-repo</id>
-            <url>http://repo.arraying.de/repository/maven-snapshots</url>
+            <id>arraying-snapshots</id>
+            <url>http://repo.arraying.de/snapshots</url>
         </snapshotRepository>
         <repository>
-            <id>arraying-repo</id>
-            <url>http://repo.arraying.de/repository/maven-releases</url>
+            <id>arraying-releases</id>
+            <url>http://repo.arraying.de/releases</url>
         </repository>
     </distributionManagement>
     <build>
